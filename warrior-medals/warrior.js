@@ -32,7 +32,7 @@ async function fetchData() {
 			out += `
 				<tr>
 					<td>
-						<!-- <img style="vertical-align:middle" src="${map.name.split(" ")[0].toLowerCase()}_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/season-icons/${map.name.split(" ")[0].toLowerCase()}_32.png" width=24>
 						<span style="vertical-align:middle">
 							<a href="https://trackmania.io/#/leaderboard/${map.mapUid}">${map.name}</a>
 						</span>
@@ -48,7 +48,7 @@ async function fetchData() {
 			}
 
 			out += `
-							<!-- <img style="vertical-align:middle" src="warrior_32.png" width=24> -->
+							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
 							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 			`
 
@@ -65,7 +65,7 @@ async function fetchData() {
 					</td>
 
 					<td>
-						<!-- <img style="vertical-align:middle" src="author_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/author_32.png" width=24>
 						<span style="vertical-align:middle">${formatRaceTime(map.authorTime)}</span>
 					</td>
 				</tr>
@@ -105,7 +105,7 @@ async function fetchData() {
 			}
 
 			out += `
-							<!-- <img style="vertical-align:middle" src="warrior_32.png" width=24> -->
+							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
 							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 			`
 
@@ -122,7 +122,7 @@ async function fetchData() {
 					</td>
 
 					<td>
-						<!-- <img style="vertical-align:middle" src="author_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/author_32.png" width=24>
 						<span style="vertical-align:middle">${formatRaceTime(map.authorTime)}</span>
 					</td>
 				</tr>
@@ -159,7 +159,7 @@ async function fetchData() {
 			out += `
 				<tr>
 					<td>
-						<!-- <img style="vertical-align:middle" src="${season}_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/season-icons/${season}_32.png" width=24>
 						<span style="vertical-align:middle">
 							${map.date}
 						</span>
@@ -179,7 +179,7 @@ async function fetchData() {
 			}
 
 			out += `
-							<!-- <img style="vertical-align:middle" src="warrior_32.png" width=24> -->
+							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
 							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 			`
 
@@ -196,7 +196,7 @@ async function fetchData() {
 					</td>
 
 					<td>
-						<!-- <img style="vertical-align:middle" src="author_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/author_32.png" width=24>
 						<span style="vertical-align:middle">${formatRaceTime(map.authorTime)}</span>
 					</td>
 				</tr>
@@ -249,7 +249,7 @@ async function fetchData() {
 			}
 
 			out += `
-				<!-- <img style="vertical-align:middle" src="warrior_32.png" width=24> -->
+				<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
 				<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 			`
 
@@ -266,7 +266,7 @@ async function fetchData() {
 					</td>
 
 					<td>
-						<!-- <img style="vertical-align:middle" src="author_32.png" width=24> -->
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/author_32.png" width=24>
 						<span style="vertical-align:middle">${formatRaceTime(map.authorTime)}</span>
 					</td>
 				</tr>
