@@ -22,12 +22,6 @@ async function fetchData() {
 		let out = ""
 		for (let map of data.Seasonal) {
 			let warrior = map.warriorTime
-			let custom = false
-
-			if (map.custom != null) {
-				warrior = map.custom
-				custom = true
-			}
 
 			out += `
 				<tr>
@@ -39,29 +33,8 @@ async function fetchData() {
 					</td>
 
 					<td>
-			`
-
-			if (custom) {
-				out += `
-						<div class="tooltip"><i>
-				`
-			}
-
-			out += `
-							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
-							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
-			`
-
-			if (custom) {
-				out += `</i>
-							<span class="tooltiptext">
-								${map.reason}
-							</span>
-						</div>
-				`
-			}
-
-			out += `
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 					</td>
 
 					<td>
@@ -78,12 +51,6 @@ async function fetchData() {
 		out = ""
 		for (let map of data.Grand) {
 			let warrior = map.warriorTime
-			let custom = false
-
-			if (map.custom != null) {
-				warrior = map.custom
-				custom = true
-			}
 
 			out += `
 				<tr>
@@ -96,29 +63,8 @@ async function fetchData() {
 					</td>
 
 					<td>
-			`
-
-			if (custom) {
-				out += `
-						<div class="tooltip"><i>
-				`
-			}
-
-			out += `
-							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
-							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
-			`
-
-			if (custom) {
-				out += `</i>
-							<span class="tooltiptext">
-								${map.reason}
-							</span>
-						</div>
-				`
-			}
-
-			out += `
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 					</td>
 
 					<td>
@@ -134,12 +80,6 @@ async function fetchData() {
 		out = ""
 		for (let map of data.Weekly) {
 			let warrior = map.warriorTime
-			let custom = false
-
-			if (map.custom != null) {
-				warrior = map.custom
-				custom = true
-			}
 
 			out += `
 				<tr>
@@ -152,29 +92,8 @@ async function fetchData() {
 					</td>
 
 					<td>
-			`
-
-			if (custom) {
-				out += `
-						<div class="tooltip"><i>
-				`
-			}
-
-			out += `
-							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
-							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
-			`
-
-			if (custom) {
-				out += `</i>
-							<span class="tooltiptext">
-								${map.reason}
-							</span>
-						</div>
-				`
-			}
-
-			out += `
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 					</td>
 
 					<td>
@@ -190,12 +109,6 @@ async function fetchData() {
 		out = ""
 		for (let map of data.Totd) {
 			let warrior = map.warriorTime
-			let custom = false
-
-			if (map.custom != null) {
-				warrior = map.custom
-				custom = true
-			}
 
 			let season = ""
 			switch (parseInt(map.date.split("-")[1])) {
@@ -226,29 +139,8 @@ async function fetchData() {
 					</td>
 
 					<td>
-			`
-
-			if (custom) {
-				out += `
-						<div class="tooltip"><i>
-				`
-			}
-
-			out += `
-							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
-							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
-			`
-
-			if (custom) {
-				out += `</i>
-							<span class="tooltiptext">
-								${map.reason}
-							</span>
-						</div>
-				`
-			}
-
-			out += `
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 					</td>
 
 					<td>
@@ -264,12 +156,6 @@ async function fetchData() {
 		out = ""
 		for (let map of data.Other) {
 			let warrior = map.warriorTime
-			let custom = false
-
-			if (map.custom != null) {
-				warrior = map.custom
-				custom = true
-			}
 
 			out += `
 				<tr>
@@ -298,27 +184,8 @@ async function fetchData() {
 					</td>
 
 					<td>
-			`
-
-			if (custom) {
-				out += `<div class="tooltip"><i>`
-			}
-
-			out += `
-				<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
-				<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
-			`
-
-			if (custom) {
-				out += `</i>
-							<span class="tooltiptext">
-								${map.reason}
-							</span>
-						</div>
-				`
-			}
-
-			out += `
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
 					</td>
 
 					<td>
