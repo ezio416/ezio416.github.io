@@ -76,6 +76,62 @@ async function fetchData() {
 		document.getElementById("defaultOpen").click();
 
 		out = ""
+		for (let map of data.Grand) {
+			let warrior = map.warriorTime
+			let custom = false
+
+			if (map.custom != null) {
+				warrior = map.custom
+				custom = true
+			}
+
+			out += `
+				<tr>
+					<td>${(map.number < 10 ? "0" : "") + map.number}</td>
+
+					<td>
+						<span style="vertical-align:middle">
+							<a href="https://trackmania.io/#/leaderboard/${map.mapUid}">${stripFormatCodes(map.name)}</a>
+						</span>
+					</td>
+
+					<td>
+			`
+
+			if (custom) {
+				out += `
+						<div class="tooltip"><i>
+				`
+			}
+
+			out += `
+							<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/warrior_32.png" width=24>
+							<span style="vertical-align:middle">${formatRaceTime(warrior)}</span>
+			`
+
+			if (custom) {
+				out += `</i>
+							<span class="tooltiptext">
+								${map.reason}
+							</span>
+						</div>
+				`
+			}
+
+			out += `
+					</td>
+
+					<td>
+						<img style="vertical-align:middle" src="https://ezio416.github.io/medal-icons/author_32.png" width=24>
+						<span style="vertical-align:middle">${formatRaceTime(map.authorTime)}</span>
+					</td>
+				</tr>
+			`
+		}
+
+		document.querySelector("#table-grands").innerHTML = out
+
+		out = ""
 		for (let map of data.Weekly) {
 			let warrior = map.warriorTime
 			let custom = false
